@@ -33,6 +33,7 @@ main #item-list ul a {
   padding: 20px;
   font-size: 30px;
   text-decoration: none;
+  color: black;
 }
 
 a:visited {
@@ -40,8 +41,8 @@ a:visited {
 }
 .responsive{
     max-width: 100%;
-  height: auto;
-  border-style: double;
+    height: auto;
+    border-style: double;
    border-width:20px ;
    border-color: red;
    border-radius: 25px;
@@ -59,7 +60,7 @@ footer{
     border-color: chartreuse;
     border-width: 15px;
     text-align: center;
-   font-weight: 600;
+    font-weight: 600;
     font-family: "Nunito", sans-serif; 
     
   } 
