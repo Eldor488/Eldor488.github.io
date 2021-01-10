@@ -1,10 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@200&family=Nunito:wght@200&display=swap');
-h1 {
- font-size: 45px;
- font-family: 'Fraunces', serif;
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@200&family=Nunito:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+body {
+  background-color: #f7f5f1;
 }
 
-h2{
-    font-family: 'Nunito', sans-serif;
+h1 {
+  font-size: 50px;
+  font-family: "Fraunces", serif;
 }
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-size:25px;
+}
+
+header {
+  width: 80%;
+  height: auto;
+  background-color: aqua;
+  margin: auto;
+  text-align: center;
+  padding: 25px;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main #item-list ul a {
+  margin: 130px;
+  padding: 20px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+.responsive{
+    max-width: 100%;
+  height: auto;
+  border-style: double;
+   border-width:20px ;
+   border-color: red;
+   border-radius: 25px;
+} 
+
+.main-container, footer{ 
+    width: 70%; 
+    margin: auto;
+} 
+
+footer{
+    background-color: aquamarine; 
+    padding: 10px; 
+    border-style:solid ;
+    border-color: chartreuse;
+    border-width: 15px;
+    text-align: center;
+   font-weight: 600;
+    font-family: "Nunito", sans-serif; 
+} 
+

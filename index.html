@@ -6,22 +6,16 @@
     <link rel="stylesheet" href="style.css">
     <title>Course Portal Home page</title>
   </head>
-  <script>
-     
-let modifiedDate = document.lastModified; 
-
-document.getElementById("lastUpdate").innerHTML = modifiedDate; 
-  </script>
+ 
   <body>
+      <div class="main-container">
     <header>
       <h1>Enmanuel De los Santos Cruz</h1>
       <h2>CIT 230: Assigment portal</h2>
     </header>
     <hr />
     <main>
-    <div id="portrait-photo">
-     <img src="/portrait.png" alt="photo" class="responsive">
-    </div>
+    
     <div id="item-list">
     <ul>
         <a href="#"><li>Week 02: Lesson 02</li></a>
@@ -39,11 +33,20 @@ document.getElementById("lastUpdate").innerHTML = modifiedDate;
         <a href="#"><li>Week 14: Lesson 14</li></a>
     </ul>
     </div>
+    <div id="portrait-photo">
+        <img src="portrait.png" alt="photo" class="responsive">
+       </div>
 </main>
-<footer>
-    <footer> &copy; <span id="currentyear"></span> | Enmanuel De los Santos Cruz | Santo Domingo, Dominican Republic | <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br>
+    <footer> &copy; | Enmanuel De los Santos Cruz | Santo Domingo, Dominican Republic | <br>
+        <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br>
         <div id="updated">Last Updated: <span id="lastUpdate"></span></div>
        </footer>
-</footer>
+       <script>
+     
+        let modifiedDate = document.lastModified; 
+        
+        document.getElementById("lastUpdate").innerHTML = modifiedDate; 
+          </script>
+          </div>
   </body>
 </html>
