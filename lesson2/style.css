@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500&family=Roboto+Slab&display=swap');body{
+  background-color: white;
+  margin: 0;
+  height: 100vh;
+  
+}
+header{
+    margin: auto;
+  text-align: center;
+    font-family: 'Roboto Slab', serif;
+    border: 5px solid black;
+    height: auto;
+    width: 50%;
+    background-color: #75DDDD;
+    color: #235789;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+.container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    margin: auto; 
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+     }
+
+.box{
+    height: auto;
+    color: black;
+    font-weight: 400;
+    border: 5px solid #172A3A;
+    position: relative;
+    padding: 10px;
+}
+
+.container .box img{
+        margin: auto;
+        
+        max-width: 80%;
+        height: auto;
+       
+} 
+
+footer{
+    background-color: aquamarine; 
+    padding: 10px; 
+    border-style:solid ;
+    border-color: chartreuse;
+    border-width: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif; 
+    height: auto; 
+    width: 80%;
+    margin: auto;
+  } 
+
