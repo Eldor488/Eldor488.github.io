@@ -45,16 +45,16 @@ header{
 } 
 
 footer{
-    background-color: aquamarine; 
-    padding: 10px; 
-    border-style:solid ;
-    border-color: chartreuse;
-    border-width: 15px;
-    text-align: center;
-    font-weight: 600;
-    font-family: "Nunito", sans-serif; 
-    height: auto; 
-    width: 80%;
     margin: auto;
+    text-align: center;
+      font-family: 'Roboto Slab', serif;
+      border: 5px solid black;
+      height: auto;
+      width: 50%;
+      background-color: #75DDDD;
+      color: #235789;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 8px;
   } 
 
