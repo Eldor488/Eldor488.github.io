@@ -126,3 +126,7 @@ footer{
     list-style: none;
     font-size: 20px;
 }
+main img{
+    width: 30%;
+    height: auto;
+}
