@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@200;300;400;500;600;700&family=Roboto+Condensed&display=swap');
+
+
+header{
+    margin: auto;
+    font-family: 'Fraunces', serif; 
+    font-size: 20px;
+    color: #d1f5ff;
+    background-color: #eef8ff; 
+    height: auto;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+
+header nav ul li{
+    margin: auto;
+    text-align: center;
+     list-style: none;
+     text-decoration: none;
+} 
+
+header nav ul li a{
+    text-decoration: none; 
+    line-height: 1.7;
+    font-weight: 500;
+}
+header nav ul li a:visited{
+    color: black;
+    
+} 
+
+#roboto{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 45px;
+} 
+#fraunces{
+    font-family: 'Fraunces', serif;
+    font-size: 45px;
+}  
+
+main{
+    margin: auto;
+    width: 50%;
+    height: auto;
+    background-color: #78E3FD;
+    text-align: center;
+    padding: 25px;
+}
+
+main h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px; 
+}
+main h2, h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+}
+
+main p{
+    font-family: 'Fraunces', serif;}
+footer{
+    margin: auto;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+      border: 5px solid black;
+      height: auto;
+      width: 50%;
+      background-color: #D1F5FF;
+      color: #7D53DE;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 8px;
+  } 
+

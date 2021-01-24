@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Typography</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <script src="https://kit.fontawesome.com/ab8a32fcf3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home page</a></li>
+                <li><a href="color-scheme.html">Color Scheme</a></li>
+                <li><a href="target-audience.html">Target Audience</a></li>
+                
+            </ul>
+    </header>
+    <main>
+    <h1>Typography</h1>
+    <h1>Headings: Roboto Condensed</h1>
+    <p>
+      I like this font beacuse is really appealing to the viewer, and it
+      transmits a feeling of comfort to the sight.
+    </p>
+    <p id="roboto">This is how the font looks.</p>
+
+    <h1>All other text: Fraunces</h1>
+    <p>
+      This font represents one aspect that I enjoy a lot from the website, the
+      simplicity of it. It is a very elegant font, and it is not overwhelming to
+      the viewver.
+    </p>
+    <span id="fraunces">This is how the font looks.</span>
+</main>
+<footer>
+    &copy; | Enmanuel De los Santos Cruz | Santo Domingo, Dominican Republic
+    | <br />
+    <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br />
+    <div id="updated">Last Updated: <span id="lastUpdate"></span></div>
+  </footer>
+  <script>
+    let modifiedDate = document.lastModified;
+
+    document.getElementById("lastUpdate").innerHTML = modifiedDate;
+  </script>
+  </body>
 </html>
