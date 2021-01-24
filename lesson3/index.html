@@ -8,8 +8,40 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-
+    <script src="https://kit.fontawesome.com/ab8a32fcf3.js" crossorigin="anonymous"></script>
     <title>Site planning</title>
+    
   </head>
-  <body></body>
+  <body>
+    <h1>Enmanuel's Website Planning Document</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="color_scheme.html">Color Scheme</a></li>
+                <li><a href="target_audience.html">Target Audience</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+    </header>
+    <h2>Site Name: Detailed-Weather</h2>
+    <h2>Domain Name: www.detailedweather.com</h2>
+    <h2>Logo</h2>
+    <p><i class="fas fa-smog"></i></p>
+    <h3>Site Purpose</h3>
+    <p>The purpose of this site is to provide accurate information about the weather in an easy way. 
+      The information on the website will be updated constantly so, people will know the constant changes in the weather. 
+      This will come in handy whether someone is planning a trip or just needs to know which kind of cloth needs to wear 
+      before going outside.</p>
+    <footer>
+        &copy; | Enmanuel De los Santos Cruz | Santo Domingo, Dominican Republic
+        | <br />
+        <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br />
+        <div id="updated">Last Updated: <span id="lastUpdate"></span></div>
+      </footer>
+      <script>
+        let modifiedDate = document.lastModified;
+
+        document.getElementById("lastUpdate").innerHTML = modifiedDate;
+      </script>
+  </body>
+
 </html>
