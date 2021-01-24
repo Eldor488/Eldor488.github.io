@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@200;300;400;500;600;700&family=Roboto+Condensed&display=swap');
 
-
+body{
+    font-family: 'Fraunces', serif;
+}
 header{
     margin: auto;
     font-family: 'Fraunces', serif; 
     font-size: 20px;
     color: #d1f5ff;
-    background-color: #eef8ff; 
+    background-color: #D1F5FF; 
     height: auto;
     width: 50%;
     text-align: center;
     padding: 20px;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 
@@ -43,8 +46,7 @@ header nav ul li a:visited{
 
 main{
     margin: auto;
-    width: 50%;
-    height: auto;
+    width: 80%;
     background-color: #78E3FD;
     text-align: center;
     padding: 25px;
@@ -68,10 +70,59 @@ footer{
       border: 5px solid black;
       height: auto;
       width: 50%;
-      background-color: #D1F5FF;
+      background-color: #EEF8FF;
       color: #7D53DE;
       margin-top: 15px;
       margin-bottom: 15px;
       padding: 8px;
   } 
+.container{
+    width: 65%;
+    margin: auto;
+    padding: 45px;
+    background-color: #78E3FD;
+    margin-top: 15px;
+}
+#main-typo{
+    background-color: #7D53DE;
+} 
 
+#first-color{
+    background-color: #34F6F2;
+}
+#second-color{
+    background-color: #78E3FD;
+}
+#third-color{
+    background-color: #D1F5FF;
+}
+#fourth-color{
+    background-color: #eef8ff;
+}
+#fifth-color{
+    background-color: #7D53DE;
+} 
+
+#color-container{
+    margin: auto;
+    width: 80%;
+    background-color: #E7F59E;
+    text-align: center;
+    padding: 25px;
+   
+}
+
+.color{
+    padding:20px;
+    margin: 5%;
+    font-size: 34px;
+}
+#color-container ul li{
+    margin: auto;
+    width: 80%;
+    background-color: #FBFAEE;
+    text-align: center;
+    padding: 25px;
+    list-style: none;
+    font-size: 20px;
+}
