@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Serif+Pro:wght@300&display=swap');
+/*font-family: 'Playfair Display', serif;
+font-family: 'Source Serif Pro', serif;*/
+
+body{
+    background-color: #1B5299;
+}
+
+header{
+    background-color: #1B5299; 
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%; 
+    margin: auto;
+}
+
+header #text-content #site-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 5vw;
+    color: white;
+}
+header #text-content #motto{
+    font-family: 'Source Serif Pro', serif;
+    font-size: 3vw;
+    color: white;
+}
+header img {
+    width: 12%;
+    height: auto;
+    margin-top: 3%;
+    margin-right: 2%;
+}
+
+#text-contet{
+  display: flex;
+  flex-direction: column;
+} 
+
+nav{
+    background-color: #023E8A;
+}
+
+nav button{
+   margin: .2rem 2%;
+   background-color: transparent;
+   border: none;
+   font-size: 1.8rem;
+   color: #00B4D8;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    color: #C4F4C7;
+
+}
+
+nav ul li a{ 
+    display: block;
+    text-decoration: none;
+    padding: 1%;
+    font-size: 1.2rem;
+    border-top: 1px solid #000;
+    color: white;
+}
+
+nav ul li a:visited{ 
+    color: #C4F4C7;
+    font-family: 'Source Serif Pro', serif;
+}
+
+nav ul li a:hover{ 
+    color:#CAF0F8;
+    
+}
+nav ul li.active a {
+    background-color: #0096C7;
+    color: white;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  

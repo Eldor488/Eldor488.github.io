@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <title>Weather Site</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="images/weather.svg" alt="" />
+      <div id="text-content">
+        <h1 id="site-title">Preston Weather Site</h1>
+        <section id="motto">The precise forecas</section>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button>&equiv; Menu</button>
+      <ul>
+        <li class="active"><a href="#" ">Home</a> </li>
+        <li><a href="#">Preston</a> </li>
+        <li><a href="#">Soda Springs</a> </li>
+        <li><a href="#">Fish Heavens</a></li>
+        <li><a href="#">Storm Center</a> </li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="holders" id="section1">
+        <h2>Hero image/weather summary</h2>
+      </section>
+      <section class="holders" id="section1">
+        <h2>5 day forecast</h2>
+      </section>
+      <section class="holders" id="section1">
+        <h2>Article</h2>
+      </section>
+      <section class="holders" id="section1">
+        <h2>Contact Information</h2>
+      </section>
+    </main>
+
+    <footer>
+      &copy; | Enmanuel De los Santos Cruz | Santo Domingo, Dominican Republic |
+      <br />
+      <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br />
+      <div id="updated">Last Updated: <span id="lastUpdate"></span></div>
+    </footer>
+    <script>
+      let modifiedDate = document.lastModified;
+
+      document.getElementById("lastUpdate").innerHTML = modifiedDate;
+    </script>
+  </body>
+</html>
