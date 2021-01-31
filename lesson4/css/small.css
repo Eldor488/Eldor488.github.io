@@ -90,3 +90,43 @@ nav ul li.active a {
   nav ul.hide{
        display: none;
   }
+
+  #container{
+    
+    width: 80%;
+    background-color: #00B4D8;
+    text-align: center;
+    padding: 25px;
+    margin: 1.5rem auto;
+    color: white;
+    
+   }
+
+   #container .holders{
+    font-size: 1.8vw;
+    font-family: 'Source Serif Pro', serif;
+    padding: 0.5%;
+    border: 2px dashed rgb(0, 0, 0);
+    margin-top: 20px;
+   }
+
+   footer{
+    margin: auto;
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+      border: 3px solid black;
+      height: auto;
+      width: 50%;
+      background-color: #03045E;
+      color: #fff;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 8px;
+    
+  } 
+
+  footer a{
+   color: white;
+   text-decoration: none;
+    
+  } 
