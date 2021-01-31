@@ -54,9 +54,11 @@
       <div id="updated">Last Updated: <span id="lastUpdate"></span></div>
     </footer>
     <script>
-      let modifiedDate = document.lastModified;
-
-      document.getElementById("lastUpdate").innerHTML = modifiedDate;
+      const months = ["January", "February", "March","April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let currentDate = new Date()
+let result = weekdays[currentDate.getDay()] + ", " + currentDate.getDate() + " " + months[currentDate.getMonth()] + " "  + currentDate.getFullYear();
+document.getElementById('lastUpdate').innerHTML = result;
     </script>
     <script src="js/script.js"></script>
   </body>
