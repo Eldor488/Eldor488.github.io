@@ -1,4 +1,4 @@
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 45rem) {
 nav button{
     display: none;
     
@@ -18,4 +18,7 @@ nav ul{
     padding: .8rem 1rem;
  }
 
+ nav ul.hide{
+     display: block;
+ }
 }

@@ -87,4 +87,6 @@ nav ul li.active a {
     display: table;
     clear: both;
   }
-  
+  nav ul.hide{
+       display: none;
+  }
