@@ -98,7 +98,7 @@ nav ul li.active a {
     width: 80%;
     background-color: #023E8A;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     margin: 1rem auto;
     color: white;
     
@@ -139,7 +139,17 @@ nav ul li.active a {
       text-align: center;
   } 
 
-  #container #hero-image #placeholder{
-    width: 90%;
+
+  
+  
+ #container .placeholder .hero-image{
+width: 100%;
+height: auto;
+ } 
+
+ #container .placeholder .info{
+   width: auto;
     height: auto;
-  }
+    background-color: white;
+    color: black;
+     }

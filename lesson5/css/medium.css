@@ -1,4 +1,4 @@
-@media only screen and (min-width: 45rem) {
+@media only screen and (min-width: 50rem) {
 nav button{
     display: none;
     
@@ -21,4 +21,25 @@ nav ul{
  nav ul.hide{
      display: block;
  }
+ .placeholder {
+    margin: 10px auto;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+   width: 100%;
+}
+.info {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    background: radial-gradient(rgba(30, 143, 255, 0.616), DodgerBlue);
+    border: 1px solid black;
+    padding: .5rem;
+    box-shadow: 0 0 30px #777;
+    opacity: .8; } 
+
+    .hero-image{
+        width: 100%;
+        height: auto;
+    }
 }
