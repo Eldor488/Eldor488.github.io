@@ -133,8 +133,8 @@ nav ul li.active a {
     
   } 
 
-  body h1{
-      font-size: 3em;
+  body h1, .title{
+      font-size: 6em;
       color: white;
       text-align: center;
   } 
@@ -150,6 +150,32 @@ height: auto;
  #container .placeholder .info{
    width: auto;
     height: auto;
-    background-color: white;
-    color: black;
+    background-color: #03045E;
+    color: #CAF0F8;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 25px;
+    padding: 5px;
+     }
+
+     #forecast-content{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 3px;
+     }
+
+     .content img{
+         width: 70%;
+         height: auto;
+     }
+
+     .content{
+         width: 70%;
+     margin: auto;     }
+
+     .content .forecast{
+         background-color: white;
+         color: black;
+         border: 3px solid #023E8A;
+         text-align: center;
+         font-size: 2em;
      }
