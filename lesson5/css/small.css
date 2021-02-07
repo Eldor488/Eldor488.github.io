@@ -75,7 +75,9 @@ nav ul li a:visited{
 }
 
 nav ul li a:hover{ 
-    color:#CAF0F8;
+    color:white;
+    background-color: #0096C7;
+  text-decoration: underline;
     
 }
 nav ul li.active a {

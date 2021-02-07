@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-   <script sc></script>
+    <script sc></script>
     <title>Weather Site</title>
   </head>
   <body>
@@ -24,11 +24,11 @@
     <nav class="clearfix">
       <button onclick="toggleMenu()">&equiv;</button>
       <ul id="list-items" class="hide">
-        <li class="active"><a href="#" ">Home</a> </li>
-        <li><a href="#">Preston</a> </li>
-        <li><a href="#">Soda Springs</a> </li>
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Heavens</a></li>
-        <li><a href="#">Storm Center</a> </li>
+        <li><a href="#">Storm Center</a></li>
         <li><a href="#">Gallery</a></li>
       </ul>
     </nav>
@@ -54,11 +54,39 @@
       <div id="updated">Last Updated: <span id="lastUpdate"></span></div>
     </footer>
     <script>
-      const months = ["January", "February", "March","April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-let currentDate = new Date()
-let result = weekdays[currentDate.getDay()] + ", " + currentDate.getDate() + " " + months[currentDate.getMonth()] + " "  + currentDate.getFullYear();
-document.getElementById('lastUpdate').innerHTML = result;
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      const weekdays = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      let currentDate = new Date();
+      let result =
+        weekdays[currentDate.getDay()] +
+        ", " +
+        currentDate.getDate() +
+        " " +
+        months[currentDate.getMonth()] +
+        " " +
+        currentDate.getFullYear();
+      document.getElementById("lastUpdate").innerHTML = result;
     </script>
     <script src="js/script.js"></script>
   </body>
