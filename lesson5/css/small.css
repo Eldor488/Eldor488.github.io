@@ -3,7 +3,7 @@
 font-family: 'Source Serif Pro', serif;*/
 
 body{
-    background-color: #1B5299;
+    background-color: #0096C7;
 }
 
 header{
@@ -96,10 +96,10 @@ nav ul li.active a {
   #container{
     
     width: 80%;
-    background-color: #00B4D8;
+    background-color: #023E8A;
     text-align: center;
-    padding: 25px;
-    margin: 1.5rem auto;
+    padding: 10px;
+    margin: 1rem auto;
     color: white;
     
    }
@@ -132,3 +132,14 @@ nav ul li.active a {
    text-decoration: none;
     
   } 
+
+  body h1{
+      font-size: 3em;
+      color: white;
+      text-align: center;
+  } 
+
+  #container #hero-image #placeholder{
+    width: 90%;
+    height: auto;
+  }
