@@ -180,9 +180,30 @@ height: auto;
          width: 100%;
          margin: 10px;
      }
-
+#forecast-content{
+    width: 80%  !important;
+    height: auto !important;
+    margin: auto !important;
+}
      .content .forecast img{
-        width: 60%;
+        max-width: 60%;
         height: auto;
         padding: 10px;
+    }
+    .container-wrap{
+        margin: 150px;
+        width: 50%;
+        padding: 8%;
+        border: 3px solid black;
+    }
+
+    .container-wrap img{
+        float: right;
+        width: 60%;
+        height: auto;
+    }
+
+    .container-wrap p{
+        text-align: justify;
+        margin: auto;
     }
