@@ -64,7 +64,7 @@ nav ul li a{
     display: block;
     text-decoration: none;
     padding: 1%;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     border-top: 1px solid #000;
     color: white;
 }
@@ -173,10 +173,10 @@ height: auto;
  .box {
    
      height: auto;
-     width: 100%;
-     border: 6px solid #0096C7;
+     width: 80%;
+     border: 6px solid #03045E;
      margin: auto;
-  
+    margin-bottom: 25px;
      background-color: white;
    
  }
@@ -185,13 +185,54 @@ height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 50%;
     margin-top: 10px;
 }
 
 .box p{
     text-align: center;
-    font-size: 5vw;
+    font-size: 1.6vw;
     font-family: 'Times New Roman', serif;
     
+}
+article {
+    width: 80%;
+    margin: auto;
+    border: 5px solid black;
+    position: relative;
+    background-color: #CAF0F8;
+   
+
+}
+article h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5vw;
+    text-align: left;
+    padding: 2%;
+    color: #03045E;
+}
+
+article p{
+    line-height: 2;
+    font-size: 1.7vw;
+    font-family: 'Source Serif Pro', serif;
+    padding:5%;
+   
+}
+
+article img {
+    width: 100%; 
+    height: auto;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+  
+
+}
+
+.contact-info{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50%, 2fr));
 }
