@@ -181,7 +181,7 @@ height: auto;
          margin: 10px;
      }
 #forecast-content{
-    width: 80%  !important;
+    width: 80%  !important; 
     height: auto !important;
     margin: auto !important;
 }
@@ -207,3 +207,5 @@ height: auto;
         text-align: justify;
         margin: auto;
     }
+
+    /*hey*/
