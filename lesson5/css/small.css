@@ -46,7 +46,7 @@ nav button{
    margin: .2rem 2%;
    background-color: transparent;
    border: none;
-   font-size: 1.8rem;
+   font-size: 1.2rem;
    color: #00B4D8;
 }
 
@@ -64,7 +64,7 @@ nav ul li a{
     display: block;
     text-decoration: none;
     padding: 1%;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     border-top: 1px solid #000;
     color: white;
 }
