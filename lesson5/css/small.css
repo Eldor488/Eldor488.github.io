@@ -233,6 +233,12 @@ display: block;
 
 .contact-info{
     width: 90%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(50%, 2fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-info #information{
+    background-color: white;
+   display: inline; 
 }
