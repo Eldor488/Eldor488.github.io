@@ -134,9 +134,11 @@ nav ul li.active a {
   } 
 
   body h1, .title{
-      font-size: 6em;
+      font-size: 5em;
       color: white;
       text-align: center;
+      width: 100%;
+      margin: auto;
   } 
 
 
@@ -157,19 +159,16 @@ height: auto;
     padding: 5px;
      }
 
-     #forecast-content{
+     .content{
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-gap: 3px;
+        grid-gap: 5px;
      }
 
-     .content img{
-         width: 70%;
-         height: auto;
-     }
+     
 
      .content{
-         width: 70%;
+         width: 100%;
      margin: auto;     }
 
      .content .forecast{
@@ -178,4 +177,12 @@ height: auto;
          border: 3px solid #023E8A;
          text-align: center;
          font-size: 2em;
+         width: 100%;
+         margin: 10px;
      }
+
+     .content .forecast img{
+        width: 60%;
+        height: auto;
+        padding: 10px;
+    }
