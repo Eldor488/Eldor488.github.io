@@ -134,7 +134,7 @@ nav ul li.active a {
   } 
 
   body h1, .title{
-      font-size: 5em;
+      font-size: 3em;
       color: white;
       text-align: center;
       width: 100%;
@@ -221,24 +221,51 @@ article p{
 }
 
 article img {
-    width: 100%; 
+    width: 50%; 
     height: auto;
-display: block;
-  margin-left: auto;
-  margin-right: auto;
+    display: block;
+    margin-left: auto;
+   margin-right: auto;
  
   
 
 }
 
-.contact-info{
-    width: 90%;
+@media screen and (min-width: 600px) and (max-width: 1000px){
+.contact-info {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
 }
 
+.contact-info img{    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+} 
+
+.contact-info{
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+.contact-info img{
+    height: auto;
+    width: 50%;
+    float: left;
+    padding: 2vw;
+    
+}
 .contact-info #information{
-    background-color: white;
-   display: inline; 
+    font-size: 2vw;
+    padding-right: 4vw;
+    
 }
