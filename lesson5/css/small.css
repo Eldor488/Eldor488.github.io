@@ -269,3 +269,9 @@ article img {
     padding-right: 4vw;
     
 }
+#pancakes-saturday{
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    display:none;
+}
