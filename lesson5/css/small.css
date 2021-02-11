@@ -248,26 +248,28 @@ article img {
     margin-right: auto;
     padding: 20px;
     overflow: hidden;
-    margin-left: 25%;
-    margin-right: 25%;
+   
     background-color: lightgray;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 70%;
   
 }
 
 .contact-info img{
     height: auto;
-    width: 50%;
+    max-width: 50%;
     float: left;
-    padding: 2vw;
+    padding: 2vw; 
+    margin-left: 10vw;
     
 }
 .contact-info #information{
     font-size: 2vw;
     padding-right: 4vw;
-    
+    margin-right: 10vw;
+  
 }
 #pancakes-saturday{
     text-align: center;
