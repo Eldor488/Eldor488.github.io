@@ -31,11 +31,12 @@
     position: absolute;
     top: 20px;
     left: 80px;
-    background: radial-gradient(rgba(30, 143, 255, 0.616), DodgerBlue);
+    background: radial-gradient(rgba(30, 143, 255, 0.800), rgb(4, 57, 109));
     border: 1px solid black;
     padding: 0.5rem;
     box-shadow: 0 0 30px #777;
     opacity: 0.8;
+    color: black;
   }
 
   .hero-image {
@@ -54,4 +55,19 @@
     height: auto !important;
     padding: 2%;
   }
+
+  .contact-info{
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    
+    overflow: hidden;
+   color: white;
+    background-color: #0077B6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+  
+}
 }

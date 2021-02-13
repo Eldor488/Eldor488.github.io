@@ -139,6 +139,7 @@ nav ul li.active a {
       text-align: center;
       width: 100%;
       margin: auto;
+      margin: 3vw 0 3vw 0;
   } 
 
 
@@ -152,7 +153,7 @@ height: auto;
  #container .placeholder  .info{
    width: auto;
     height: auto;
-    background-color: #023E8A;
+    background-color: #03045E;
     color: #CAF0F8;
     font-family: 'Source Serif Pro', serif;
     font-size: 15px;
@@ -248,12 +249,12 @@ article img {
     margin-right: auto;
     padding: 20px;
     overflow: hidden;
-   
-    background-color: lightgray;
+   color: white;
+    background-color: #0077B6;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 70%;
+    width: 50%;
   
 }
 
