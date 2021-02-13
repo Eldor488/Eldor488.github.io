@@ -8,7 +8,7 @@
         
         let windChillVariable = windChill(temperature, windSpeed);
         document.getElementById("output").innerHTML = windChillVariable.toFixed(
-          3
+          0
         );
       }
       // Return the wind chill factor in Fahrenheit
