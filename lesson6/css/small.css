@@ -144,18 +144,18 @@ nav ul li.active a {
 
   
   /*FLOATING BANNER*/
- #container .placeholder .hero-image{
-width: 100%;
+ #container .placeholder picture .hero-image{
+width: 90%;
 height: auto;
  } 
 
- #container .placeholder .info{
+ #container .placeholder  .info{
    width: auto;
     height: auto;
     background-color: #03045E;
     color: #CAF0F8;
     font-family: 'Source Serif Pro', serif;
-    font-size: 25px;
+    font-size: 15px;
     padding: 5px;
      }
  /*DO NOT TOUCH*/
