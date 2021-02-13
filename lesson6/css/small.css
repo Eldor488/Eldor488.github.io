@@ -152,7 +152,7 @@ height: auto;
  #container .placeholder  .info{
    width: auto;
     height: auto;
-    background-color: #03045E;
+    background-color: #023E8A;
     color: #CAF0F8;
     font-family: 'Source Serif Pro', serif;
     font-size: 15px;
@@ -277,3 +277,4 @@ article img {
     color: white;
     display:none;
 }
+
