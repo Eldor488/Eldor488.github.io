@@ -1,12 +1,16 @@
 .container img{
   display: flex; 
   flex-direction: column; 
-  margin-top: 2vh;
+  margin-top: 8vw;
   margin-left:3vh;
   filter: blur(0em);
   transition: filter 0.5s; 
+  width: 300px;
+  height: 400px;
 }
 
 .container img[data-src]{
-  filter: blur(0.2em)
+  filter: blur(0.2em); 
+   
+  
 }
