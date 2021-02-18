@@ -19,3 +19,11 @@
     text-align: center; 
     font-size: 2.5em;
   }
+
+  /* CENTER ITEMS HORIZONTALLY AND VERTICALLY 
+     .parent-selector {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+  */
