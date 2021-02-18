@@ -1,8 +1,12 @@
 .container img{
-    width: 300px;
-    height: 400px;
-    margin: 20px 20px 0 20px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+  display: flex; 
+  flex-direction: column; 
+  margin-top: 2vh;
+  margin-left:3vh;
+  filter: blur(0em);
+  transition: filter 0.5s; 
+}
+
+.container img[data-src]{
+  filter: blur(0.2em)
 }
