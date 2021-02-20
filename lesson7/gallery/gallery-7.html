@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="shortcut icon" href="images/icon.ico" />
+
+    <script
+      src="https://kit.fontawesome.com/ab8a32fcf3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather Site</title>
+  </head>
+  <body>
+    <div id="pancakes-saturday">
+      <p>
+        Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+        pavilion.
+      </p>
+    </div>
+    <header>
+      <img id="logo" src="images/weather.svg" alt="" />
+      <div id="text-content">
+        <h1 id="site-title">Preston Weather Site</h1>
+        <section id="motto">The precise forecast</section>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&equiv;</button>
+      <ul id="list-items" class="hide">
+        <li><a href="../../lesson6/preston-6.html">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Heavens</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <h1>Preston, Idaho</h1>
+    <main id="container">
+      <div class="placeholder">
+        <picture>
+          <source
+            srcset="images/medium.jpg"
+            media="(min-width: 520px) and (max-width: 959px)"
+          />
+          <source srcset="images/large.jpg" media="(min-width: 960px)" />
+          <img class="hero-image" src="images/small.jpg" alt="hero-images" />
+        </picture>
+
+        <section class="info">
+          <h3>Weather Summary</h3>
+          <hr />
+          <p>Currently: 55°F</p>
+          <p>Wind Chill: <span id="output"></span>°F</p>
+          <p>Precipitation: 19%</p>
+          <p>Humidity: 60%</p>
+          <p>Wind Speed: 15 mph</p>
+        </section>
+      </div>
+    </main>
+    <section class="weather-report">
+      <div class="box">
+        <img src="images/cloudy-min.png" alt="weather" />
+        <p>53°F</p>
+      </div>
+      <div class="box">
+        <img src="images/hail-min.png" alt="weather" />
+        <p>53°F</p>
+      </div>
+      <div class="box">
+        <img src="images/rain-min.png" alt="weather" />
+        <p>35°F</p>
+      </div>
+      <div class="box">
+        <img src="images/sunny-cloud-min.png" alt="weather" />
+        <p>55°F</p>
+      </div>
+      <div class="box">
+        <img src="images/weather-min.png" alt="weather" />
+        <p>15°F</p>
+      </div>
+    </section>
+    <article>
+      <h1>Article title</h1>
+      <img src="images/lady-reading-min.jpg" alt="lady-reading" />
+
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa atque
+        ipsum modi autem! Possimus dolor illum fuga, est delectus ratione, velit
+        officiis corrupti aliquid ipsam excepturi quaerat, corporis tempore
+        impedit consequatur modi rerum sapiente iure asperiores cum dicta
+        dolorem debitis soluta. Porro officiis maiores illum placeat eveniet
+        odio exercitationem expedita inventore. Fuga vel amet mollitia, unde
+        earum corporis laudantium nostrum autem omnis. Autem ipsa deserunt
+        distinctio dignissimos neque fuga illum vero aut, explicabo nesciunt
+        maiores voluptatem reprehenderit officia obcaecati? Id, dolor excepturi!
+        Inventore vero asperiores ea rerum nobis saepe natus minus mollitia,
+        totam nostrum aspernatur eveniet cum nihil corporis officia! Dolor
+        dolores animi id ea, velit, amet nesciunt, assumenda error accusantium
+        rerum corrupti ut voluptates obcaecati? Harum, saepe soluta animi,
+        veritatis libero nobis nulla consequatur tenetur hic dignissimos officia
+        laborum quisquam iure? Optio minima accusamus, numquam repudiandae
+        ratione nostrum nam voluptatum pariatur fugit, sapiente temporibus
+        aliquam obcaecati delectus cumque quod eveniet corrupti accusantium?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+        maiores eos quis molestias expedita consequatur dolor soluta
+        voluptatibus ducimus optio eaque libero quae earum? Tempore ipsum
+        quisquam ducimus beatae expedita.
+      </p>
+    </article>
+
+    <h1>Contact Information</h1>
+    <section class="contact-info">
+      <img src="images/maps-min.png" alt="maps" />
+
+      <div class="column" id="information">
+        <p><i class="fas fa-phone"> Phone Number: 234-234-1234</i></p>
+        <p><i class="fas fa-at"> email: prestonweather@idaho.com</i></p>
+        <p>
+          <i class="fas fa-map-marker-alt"> 30 N 1st E Preston, ID 83263</i>
+        </p>
+      </div>
+    </section>
+    <footer>
+      &copy; | Preston Weather Site |
+      <br />
+      <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br />
+      <div id="updated">Last Updated: <span id="lastUpdate"></span></div>
+    </footer>
+    <script>
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      const weekdays = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      let currentDate = new Date();
+      let result =
+        weekdays[currentDate.getDay()] +
+        ", " +
+        currentDate.getDate() +
+        " " +
+        months[currentDate.getMonth()] +
+        " " +
+        currentDate.getFullYear();
+      document.getElementById("lastUpdate").innerHTML = result;
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Playfair Display", "Source Serif Pro"],
+        },
+      });
+    </script>
+  </body>
+</html>
