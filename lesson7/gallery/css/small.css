@@ -38,7 +38,7 @@ header img {
     margin-right: 2%;
 }
 
-#text-contet{
+#text-content{
   display: flex;
   flex-direction: column;
 } 
@@ -52,7 +52,7 @@ nav button{
    background-color: transparent;
    border: none;
    font-size: 1.2rem;
-   color: #00B4D8;
+   color: white;
 }
 
 nav ul{
@@ -75,7 +75,7 @@ nav ul li a{
 }
 
 nav ul li a:visited{ 
-    color: #C4F4C7;
+    color: white;
     font-family: 'Source Serif Pro', serif;
 }
 
