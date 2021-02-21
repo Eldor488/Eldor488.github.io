@@ -304,3 +304,7 @@ article img {
     padding-top: 5px;
   
 }
+
+.wrapper img[data-src]{
+    filter: blur(0.2em); 
+    }
