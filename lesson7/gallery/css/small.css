@@ -284,3 +284,23 @@ article img {
     display:none;
 }
 
+.wrapper h1{
+ text-align: center; 
+ font-size: 3.5rem;
+ font-family: 'Playfair Display', serif;
+}
+
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr;
+
+} 
+.wrapper  img{
+    width: 90%;
+    margin:auto;
+    margin: 20px auto;
+    border-top: 5px solid white; 
+    padding-top: 5px;
+  
+}
