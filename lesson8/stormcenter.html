@@ -40,11 +40,11 @@
         </ul>
     </nav>
     <div class="form-container">
-        <h1>Report a storm</h1>
-        <form action="">
-            <fieldset>
+        <h1 id="form-title">Report a storm</h1>
+        <form>
+            <fieldset id="contact-field" class="fieldset-container">
                 <legend>Contact Information</legend>
-                <span>*=informatio that must be provided</span>
+                <span id="disclaimer">*=informatio that must be provided</span>
                 <label for="full-name">Ful Name*</label>
                 <input type="text" name="full-name" id="full-name" placeholder="ex: Emma Jones" required>
 
@@ -54,36 +54,37 @@
                 <label for="phone-number">Phone number*</label>
                 <input type="tel" name="phone-number" id="phone-number" required>
 
-                <label class="form-element" for="zip-code">Zip Code*<input type="number" name="zip" required></label>
+                <label class="form-element" for="zip-code">Zip Code*</label><input type="number" name="zip" required>
 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="fieldset-container">
                 <legend>Storm information</legend>
 
                 <label for="storm-date">Storm Date</label>
-                <input type="date" name="storm-date" id="storm-date">
+                <input type="date" name="storm-date" id="storm-date" required>
 
 
-                <label for="storm-type">Storm Type (Please Select &#9662;)
-                    <input list="stormtypes" name="storm-type" id="storm-type">
-                    <datalist id="stormtypes">
-                        <option>Blizzard</option>
-                        <option>Flash Flood</option>
-                        <option>Hail</option>
-                        <option>Hurricane</option>
-                        <option>Thunderstorm</option>
-                        <option>Tornado</option>
-                    </datalist>
-                </label>
-                <br>
+                <label for="storm-type">Storm Type (Please Select &#9662;) </label>
+                <input list="stormtypes" name="storm-type" id="storm-type">
+                <datalist id="stormtypes" required>
+                    <option>Blizzard</option>
+                    <option>Flash Flood</option>
+                    <option>Hail</option>
+                    <option>Hurricane</option>
+                    <option>Thunderstorm</option>
+                    <option>Tornado</option>
+                </datalist>
+
+
                 <label class="form-element" for="storm-severity">Severity from 1 (mild) to 10 (severe) </label>
-                <br>
-                <input type="range" id="storm-severity" name="storm-severity" value="3" min="1" max="10" step="1"
-                    list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+
+                <input type="range" id="storm-severity" name="storm-severity" value="3" min="1" max="10" step=""
+                    list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"
+                    style="width:70%;" required>
 
 
-                <datalist id="tickmarks">
+                <datalist id="tickmarks" required>
                     <option value="0">
                     <option value="1">
                     <option value="2">
@@ -96,27 +97,42 @@
                     <option value="9">
                     <option value="10">
                 </datalist>
-                <label class="top" for="storm-region">Storm Region</label>
-                <select name="storm-region">
+
+                <label for="storm-region">Storm Region</label>
+                <select name="storm-region" required> 
                     <option>Select Region &#9662; </option>
                     <option value="fish">Fish Haven</option>
                     <option value="preston">Preston</option>
                     <option value="soda">Soda Springs</option>
                 </select>
 
-                <div class="top">Are you in danger?</div>
-                <label class="rad"><input type="radio" id="yes" name="danger" value="yes">Yes!</label>
-                <label class="rad"><input type="radio" id="maybe" name="danger" value="maybe">Maybe</label>
-                <label class="rad"><input type="radio" id="no" name="danger" value="no">No</label>
+                <p>Are you in danger?</p>
 
+                 <div class="radio-box">
+
+                <label for="yes">Yes</label>
+                <input type="radio" id="yes" name="yes" value="yes">
+
+                <label for="no">No</label>
+                <input type="radio" id="no" name="no" value="no">
+
+
+
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="maybe" name="maybe" value="maybe">
+            </div>
 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="fieldset-container">
                 <legend>Type Any Additional Information Here</legend>
+                 <div id="textarea">
+                <textarea   id="message"
+                name="message"
+                rows="15"
+                cols="90" placeholder="Write your message here" ></textarea>
+               
 
-                <textarea id="addinfo" name="addinfo"></textarea>
-                </label>
             </fieldset>
 
             <input type="submit" value="Report Storm" class="submit">
