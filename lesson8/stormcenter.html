@@ -39,9 +39,91 @@
             <li><a href="gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
-     <div class="form-container">
-         <h1>Report a storm</h1>
-     </div>
+    <div class="form-container">
+        <h1>Report a storm</h1>
+        <form action="">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <span>*=informatio that must be provided</span>
+                <label for="full-name">Ful Name*</label>
+                <input type="text" name="full-name" id="full-name" placeholder="ex: Emma Jones" required>
+
+                <label for="email-address">Email address*</label>
+                <input type="email" name="email-address" id="email-address" placeholder="john@example.net" required>
+
+                <label for="phone-number">Phone number*</label>
+                <input type="tel" name="phone-number" id="phone-number" required>
+
+                <label class="form-element" for="zip-code">Zip Code*<input type="number" name="zip" required></label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm information</legend>
+
+                <label for="storm-date">Storm Date</label>
+                <input type="date" name="storm-date" id="storm-date">
+
+
+                <label for="storm-type">Storm Type (Please Select &#9662;)
+                    <input list="stormtypes" name="storm-type" id="storm-type">
+                    <datalist id="stormtypes">
+                        <option>Blizzard</option>
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                    </datalist>
+                </label>
+                <br>
+                <label class="form-element" for="storm-severity">Severity from 1 (mild) to 10 (severe) </label>
+                <br>
+                <input type="range" id="storm-severity" name="storm-severity" value="3" min="1" max="10" step="1"
+                    list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+
+
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <label class="top" for="storm-region">Storm Region</label>
+                <select name="storm-region">
+                    <option>Select Region &#9662; </option>
+                    <option value="fish">Fish Haven</option>
+                    <option value="preston">Preston</option>
+                    <option value="soda">Soda Springs</option>
+                </select>
+
+                <div class="top">Are you in danger?</div>
+                <label class="rad"><input type="radio" id="yes" name="danger" value="yes">Yes!</label>
+                <label class="rad"><input type="radio" id="maybe" name="danger" value="maybe">Maybe</label>
+                <label class="rad"><input type="radio" id="no" name="danger" value="no">No</label>
+
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Type Any Additional Information Here</legend>
+
+                <textarea id="addinfo" name="addinfo"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Report Storm" class="submit">
+        </form>
+
+        </form>
+    </div>
 
     <footer>
         &copy; | Preston Weather Site |

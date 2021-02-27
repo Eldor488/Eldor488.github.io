@@ -308,3 +308,8 @@ article img {
 .wrapper img[data-src]{
     filter: blur(0.2em); 
     }
+
+    .form-container{
+        width: 80%;
+        margin: auto;
+    }
