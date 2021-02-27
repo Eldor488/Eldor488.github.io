@@ -408,11 +408,13 @@ input {
 
 .fieldset-container textarea {
     resize: none;
-    max-width: 95%;
+    width: 95%;
+    margin:auto;
 
 }
 
 .fieldset-container #textarea {
    padding: 3%; 
    margin:auto;
+   width: 100%;
 }
