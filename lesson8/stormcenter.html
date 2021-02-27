@@ -99,7 +99,7 @@
                 </datalist>
 
                 <label for="storm-region">Storm Region</label>
-                <select name="storm-region" required> 
+                <select name="storm-region" required>
                     <option>Select Region &#9662; </option>
                     <option value="fish">Fish Haven</option>
                     <option value="preston">Preston</option>
@@ -108,33 +108,31 @@
 
                 <p>Are you in danger?</p>
 
-                 <div class="radio-box">
+                <div class="radio-box">
 
-                <label for="yes">Yes</label>
-                <input type="radio" id="yes" name="yes" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="yes" value="yes">
 
-                <label for="no">No</label>
-                <input type="radio" id="no" name="no" value="no">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="no" value="no">
 
 
 
-                <label for="maybe">Maybe</label>
-                <input type="radio" id="maybe" name="maybe" value="maybe">
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="maybe" name="maybe" value="maybe">
+                </div>
+
+            </fieldset>
+            <div id="textarea">
+                <fieldset class="fieldset-container">
+                    <legend>Type Any Additional Information Here</legend>
+
+                    <textarea id="message" name="message" rows="15" cols="90"
+                        placeholder="Write your message here"></textarea>
+
+
+                </fieldset>
             </div>
-
-            </fieldset>
-
-            <fieldset class="fieldset-container">
-                <legend>Type Any Additional Information Here</legend>
-                 <div id="textarea">
-                <textarea   id="message"
-                name="message"
-                rows="15"
-                cols="90" placeholder="Write your message here" ></textarea>
-               
-
-            </fieldset>
-
             <input type="submit" value="Report Storm" class="submit">
         </form>
 
