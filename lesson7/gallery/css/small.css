@@ -308,3 +308,11 @@ article img {
 .wrapper img[data-src]{
     filter: blur(0.2em); 
     }
+
+    .clearfix #list-items li a:link{
+        color: white;
+    }
+    
+    .clearfix #list-items li a:visited{
+        color: white;
+    }

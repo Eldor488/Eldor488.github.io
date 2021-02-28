@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="shortcut icon" href="images/icon.ico" />
+
+    <script src="https://kit.fontawesome.com/ab8a32fcf3.js" crossorigin="anonymous"></script>
+    <title>Weather Site</title>
+</head>
+
+<body>
+    <div id="pancakes-saturday">
+        <p>
+            Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+            pavilion.
+        </p>
+    </div>
+    <header>
+        <img id="logo" src="images/weather.svg" alt="" />
+        <div id="text-content">
+            <h1 id="site-title">Preston Weather Site</h1>
+            <section id="motto">The precise forecast</section>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv;</button>
+        <ul id="list-items" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="../../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Heavens</a></li>
+            <li class="active"><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+      <h1 id="thankyou-title">Thank you for filling out the form!!</h1>
+      <button id="thankyou-button"><a href="../../lesson6/preston-6.html">Go back to the main page</a></button>
+
+    <footer>
+        &copy; | Preston Weather Site |
+        <br />
+        <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br />
+        <div id="updated">Last Updated: <span id="lastUpdate"></span></div>
+    </footer>
+    <script>
+        const months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+        ];
+        const weekdays = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+        ];
+        let currentDate = new Date();
+        let result =
+            weekdays[currentDate.getDay()] +
+            ", " +
+            currentDate.getDate() +
+            " " +
+            months[currentDate.getMonth()] +
+            " " +
+            currentDate.getFullYear();
+        document.getElementById("lastUpdate").innerHTML = result;
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ["Playfair Display", "Source Serif Pro"],
+            },
+        });
+    </script>
+</body>
+
+</html>

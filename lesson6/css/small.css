@@ -284,3 +284,10 @@ article img {
     display:none;
 }
 
+.clearfix #list-items li a:link{
+    color: white;
+}
+
+.clearfix #list-items li a:visited{
+    color: white;
+}

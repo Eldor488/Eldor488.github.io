@@ -371,7 +371,8 @@ article img {
 
 #form-title {
     font-family: 'Shippori Mincho', serif;
-color: black;}
+    color: black;
+}
 
 #contact-field {
     padding: 3%;
@@ -409,11 +410,50 @@ input {
 .fieldset-container textarea {
     resize: none;
     width: 95%;
-    margin:auto;
- padding: 5px;
+    margin: auto;
+    padding: 5px;
 }
 
 .fieldset-container #textarea {
-   margin:auto;
-   width: 100%;
+    margin: auto;
+    width: 100%;
+}
+
+#thankyou-title {
+    font-size: 3.8rem;
+    text-align: center;
+}
+
+#thankyou-button {
+    display: block;
+    background-color: #023E8A;
+    margin: auto;
+    font-family: 'Shippori Mincho', serif;
+    padding: 2%;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    color: white;
+    width: 80%;
+    font-size: 2rem;
+    outline: none;
+    text-decoration: none;
+
+}
+
+#thankyou-button a:visited {
+   color: white;
+   text-decoration: none;
+}
+ #thankyou-button a:link{
+    text-decoration: none;
+ }
+
+ .clearfix #list-items li a:link{
+    color: white;
+}
+
+.clearfix #list-items li a:visited{
+    color: white;
 }
