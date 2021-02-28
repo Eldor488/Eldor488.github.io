@@ -422,7 +422,8 @@ input {
 #thankyou-title {
     font-size: 3.8rem;
     text-align: center;
-}
+     letter-spacing: 1.7px;
+ }
 
 #thankyou-button {
     display: block;
