@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ab8a32fcf3.js" crossorigin="anonymous"></script>
+    <title>Weather Site</title>
+</head>
+
+<body>
+    <div id="pancakes-saturday">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <img id="logo" src="images/weather.svg" alt="" />
+        <div id="text-content">
+            <h1 id="site-title">Preston Weather Site</h1>
+            <section id="motto">The precise forecast</section>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&equiv;</button>
+        <ul id="list-items" class="hide">
+            <li><a href="../lesson9/index.html">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Heavens</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallery/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <h1>Preston, Idaho</h1>
+    <main id="container">
+        
+            <img class="hero-image" src="images/hero-image.jpg" alt="hero-images" />
+       
+
+    </main>
+    <section id="event-text">
+        <h2 id="text-title">Lorem, ipsum dolor.</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repellendus, delectus asperiores consectetur, accusamus ab harum,
+            incidunt ex perferendis officia atque quisquam velit dignissimos doloremque officiis
+            iste sed nobis adipisci! Reprehenderit autem obcaecati debitis expedita quo eius aliquid odio
+            praesentium minus non totam, numquam tempore impedit commodi libero iure corrupti saepe.
+        </p>
+    </section>
+    <div id="towns">
+        <section id="preston"></section>
+        <section id="soda-springs"></section>
+        <section id="fish-haven"></section>
+    </div>
+
+    <h1>Contact Information</h1>
+    <section class="contact-info">
+
+
+        <img src="images/maps.png" alt="maps" />
+
+
+        <div class="column" id="information">
+            <p><i class="fas fa-phone">Phone Number: 234-234-1234</i></p>
+            <p><i class="fas fa-at">email: prestonweather@idaho.com</i></p>
+            <p><i class="fas fa-map-marker-alt">30 N 1st E Preston, ID 83263</i></p>
+        </div>
+    </section>
+    <footer>
+        &copy; | Preston Weather Site |
+        <br />
+        <a href="https://byui.edu/online">BYU-Idaho Online Learning</a><br />
+        <div id="updated">Last Updated: <span id="lastUpdate"></span></div>
+    </footer>
+
+    <script>
+        const months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+        ];
+        const weekdays = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+        ];
+        let currentDate = new Date();
+        let result =
+            weekdays[currentDate.getDay()] +
+            ", " +
+            currentDate.getDate() +
+            " " +
+            months[currentDate.getMonth()] +
+            " " +
+            currentDate.getFullYear();
+        document.getElementById("lastUpdate").innerHTML = result;
+    </script>
+    <script src="script.js"></script>
+    <script></script>
+</body>
+
+</html>
